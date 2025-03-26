@@ -4,7 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import streamlit as st
 
 # Load dataset
-movies = pd.read_csv('new_movies.csv')
+movies = pd.read_csv('movies.csv')
 
 # Preprocessing: Convert to lowercase and fill NaNs
 movies['title'] = movies['title'].str.lower().fillna('')
